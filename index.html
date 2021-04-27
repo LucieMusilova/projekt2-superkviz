@@ -13,6 +13,41 @@
 
 	<h1>Superkvíz</h1>
 
+  
+
+  <div id="kviz" class="kviz">
+
+    <div > 
+      <h2>Otázka <span id="pocitadlo"> 1 </span> / <span class="pocetOt">3</span></h2>
+    </div>
+
+    <div class="obsah">
+      <div class="obrazek"><img class="foto" id="foto" src=" "></div>
+      <div id="otazka" class="otazka"></div>
+      <div id="moznosti" class="moznosti">
+        <ul id="odpovedi">
+          <li class="dalsi" data-odpoved="0" id="jedna" onclick="pocitej(this)"></li>
+          <li class="dalsi" data-odpoved="1" id="dva" onclick="pocitej(this)"></li>
+          <li class="dalsi" data-odpoved="2" id="tri" onclick="pocitej(this)"></li>
+          <li class="dalsi" data-odpoved="3" id="ctyri" onclick="pocitej(this)"></li>
+        </ul>
+      </div>
+    </div>  
+  </div>
+  
+  <div id="vysledek" class="vysledek">
+      <h2>Tvoje hodnocení</h2>
+
+      <div class="vyhodnoceni"></div>
+
+      <h2>Správně je <span id="skore"> 1 </span> ze <span class="pocetOt2">3</span> otázek. Úspěšnost je <span id="procenta"> 100 </span> %.</h2>
+      <h3 class = "gratulujeme-nadpis">Gratulujeme!</h3> 
+      <p class = "gratulujeme"> O stejný počet procent, jako je tvůj výsledek, bude navýšena cena produktů Penam při tvém příštím nákupu v potravinách. A ze tvého účtu bude zaplacena a odeslána jedna Becherovna na adresu Hradu. &#128578</p>
+  </div>
+  
+
+
+
 	<!-- přidat <div> pro kvíz -->
 	<!-- do něj přidat <div>y pro samotné držení otázky -->
 	<!-- také nezapomenout na <div> pro výsledek a hodnocení -->

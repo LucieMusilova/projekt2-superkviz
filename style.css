@@ -33,6 +33,11 @@ h1 {
 	letter-spacing: 5px;
 }
 
+h2 {
+  color: var(--cervena);
+  text-align: center;
+}
+
 .kviz,
 .vysledek {
 	margin: 30px auto;
@@ -59,33 +64,42 @@ h1 {
 	line-height: 1.2;
 	text-align: center;
 	color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
 }
 
 .obsah {
-	display: flex;
-	align-items: center;
+	display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+	align-items: flex-start;
+  justify-items: center;
 }
 
 .foto {
 	width: 250px;
-	margin-right: 30px;
+  border-radius: 20%;
 }
 
-#obrazek {
-	padding: 5px;
+.moznosti {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.obrazek {
+	padding: 0 0 0 30px;
 	width: 100%;
 	height: auto;
-	border-radius: 50%;
-	border: 3px dotted var(--cervena);
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 
-#moznosti {
-	flex: 1;
-}
 
 #odpovedi {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 60px;
 	font-size: 24px;
 	list-style: none;
 }
@@ -97,6 +111,7 @@ h1 {
 	border-radius: 100px;
 	transition: all 0.2s;
 	transform: translateX(0);
+  width: 300px;
 }
 
 #odpovedi li:hover {
@@ -115,4 +130,14 @@ h1 {
 	margin-top: 0;
 	font-size: 36px;
 	color: var(--cervena);
+}
+
+.gratulujeme-nadpis {
+	font-size: 28px;
+	color: var(--cervena);
+}
+
+.gratulujeme {
+  font-size: 18px;
+  font-weight: bold;
 }
